@@ -18,7 +18,7 @@ import NotFound from './NotFound';
 
 class Main extends Component {
 
-
+/*
   componentDidMount(){
   const root = document.documentElement;
   const themeBtns = document.querySelectorAll('.theme > button');
@@ -80,8 +80,8 @@ class Main extends Component {
         break
     }
   }
-
-  } // componentdidmount
+  
+} */
 
   render() {
     return (
@@ -99,11 +99,13 @@ class Main extends Component {
             <li><NavLink to="/contact">Contact</NavLink></li>
           </ul>
           <div className="content">
+            {/*}
             <div className="theme">
               <button value="kleur1">kleur 1</button>
               <button value="kleur2">kleur 2</button>
               <button value="kleur3">kleur 3</button>
             </div>
+          */}
             <Switch>
               <Route exact path="/"         component={Home}/>
               <Route path="/reserveringen"  component={Reserveringen}/>
@@ -114,7 +116,7 @@ class Main extends Component {
             </Switch>
           </div>
           <footer className="footer">
-            <p>&copy;&nbsp;&nbsp;Stichting 60+ bus Schagen</p>
+            <p>&copy;&nbsp;&nbsp;Stichting 60+ bus Schagen&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Reserveringen : 0224-272888</strong></p>
           </footer>
         </div>
       </Router>  
