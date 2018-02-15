@@ -16,10 +16,10 @@ class Contact extends Component {
         <p>
           secretariswg60plusbus@gmail.com
         </p>  
-        <h2>Dagelijkse bestuur</h2>
+        <h2>Bestuur 60+ Bus</h2>
         <p>
           Voorzitter: Simon Carmio<br/>
-          Secretaris : Rene Broekhoven<br/>
+          Secretaris : René Broekhoven<br/>
           Penningmeester : Wil Polder<br/>
           Coördinator reserveringen : Hansje Kalff<br/>
           Coördinator chauffeurs : Jaap Schuurman<br/>

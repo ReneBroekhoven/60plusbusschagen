@@ -116,7 +116,7 @@ class Main extends Component {
             </Switch>
           </div>
           <footer className="footer">
-            <p>&copy;&nbsp;&nbsp;Stichting 60+ bus Schagen&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Reserveringen : 0224-272888</strong></p>
+            <p>&copy;&nbsp;&nbsp;Stichting 60+ bus Schagen&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reserveringen elke werkdag van 14.00 tot 15.30 uur. telefoonnummer <strong>0224-272888</strong>&nbsp;&nbsp; Ritprijs € 1,- / retour € 2,- / 10-rittenkaart € 10,-</p>
           </footer>
         </div>
       </Router>  
