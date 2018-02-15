@@ -1,0 +1,130 @@
+:root{
+  --kop-staart: #A9ECA2;
+  --kop-staart-items: rgb(31, 112, 22);
+  --body: #F5FFCB;
+  --content: #FFE3B0;
+  --rest: #F5C8BD;
+  --hover-item: rgb(69, 182, 69);
+  --active-item:  rgb(116, 231, 116);
+}
+body {
+    background-color: var(--body);
+    padding: 20px 20px;
+    margin: 0;
+  }
+
+h1, h2, h3, p, ul, li {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.theme{
+  display: inline;
+}
+
+.container{
+  display:grid;
+  grid-template-columns : 100%;
+  grid-template-rows: 60px 104px 1fr 60px;
+  min-height: 85vh;
+}
+
+.logo{
+  transform: rotate(-90deg);
+}
+
+#logo-nav{
+  width: 100px;
+  height: auto;
+  position: absolute;
+  top: 90px;
+  left: 75px;
+}
+
+#logo-titel{
+  width: 70px;
+  height: 100%;
+  margin-top: -20px;
+}
+
+.active{
+  background-color:  var(--active-item);
+}
+
+.hoofdtitel{
+  color: rgb(64, 83, 29);
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bolder;
+  margin: 0;
+  padding: 1px;
+  background-image: url('60+bus1.png');
+  background-position: center;
+}
+
+/* bij < 900px de navbar kleiner maken of met de drie streepjes*/
+ul.header li {
+    /*display: inline-block;*/
+    flex-basis: auto;
+    flex-grow: 0;
+    flex-shrink: 2;
+    list-style-type: none;
+    margin: 0;
+    background-color: var(--kop-staart-items);
+    padding: 1px;
+    margin-right: 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-out;
+  }
+
+ul.header li:hover{
+  background-color: var(--hover-item);
+}
+
+ul.header {
+  background-color:var(--kop-staart);
+  padding: 10px;
+  display:flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 0
+}
+
+ul.header li a {
+  color: #FFF;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 15px;
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-radius: 5%;
+  display: inline-block;
+  transition: color 0.3s ease-out;
+}
+
+ul.header li a:hover {
+  color: rgb(224, 198, 198);
+}
+
+/* padding bottom 0 omdat de footyer andere in de content komt te staan ? */
+.content {
+  background-color: var(--content);
+  height:100%;
+  padding: 50px 50px 0 50px;
+  margin-bottom: 50px;
+}
+
+.content h2 {
+  padding: 0;
+  margin: 0;
+}
+
+.content li {
+  margin-bottom: 10px;
+}
+
+footer{
+  background: var(--kop-staart);
+  padding: 10px;
+  margin-bottom: 0;
+}

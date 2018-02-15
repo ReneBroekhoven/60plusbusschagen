@@ -1,0 +1,199 @@
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background: #F0F0F0;
+}
+
+.container{
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 75px 100vh /*100vh 100vh 100vh*/ 75px;
+    grid-gap: 10px;
+    grid-template-areas:
+    "h h h h h h h h h h h h"
+    "p p p p p o o o o o o o"
+    /*"vr vr vr vr vr vr vr vr vr vr vr vr"
+    "vi vi vi vi vi vi vi vi vi vi vi vi"
+    "c c c c c c c c c c c c"*/
+    "f f f f f f f f f f f f";
+    background-color: white;
+}
+
+.construction{
+    font-size: 9em;
+    font-weight: 900;
+    color:red;
+    transform: rotate(-10deg);
+    position: fixed;
+    top: 400px;
+    left: 200px;
+}
+
+.nav-bar{
+    grid-area: h;
+    background-color: rgb(161, 212, 180);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+.nav-bar a img{
+    position:fixed;;
+    top: 55px;
+    left: 25px;
+    height: 100px;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+
+.nav-bar a img:hover{
+    transform: scale(1.2) rotate(-5deg);
+}
+
+.nav-bar > nav-list{   
+    padding : 25px;
+    text-align: center;
+}
+
+.nav-item{
+    background-color: rgb(0, 122, 0);
+    display: inline;
+    padding: 15px;
+    color: white;
+    font-size: 1.5em;
+    margin-right : 20px;
+    border-radius: 5px;
+    transition: background-color 0.4s ease-out;
+}  
+
+.nav-item:hover{
+    background-color: rgb(69, 182, 69);
+} 
+
+.nav-item a{
+    color: white;
+    text-decoration: none;
+    transition: color 0.4s ease-out;
+}
+
+.nav-item a:hover{
+    color: rgb(224, 198, 198);
+}
+
+
+.opening{
+    /*background-color: rgb(230, 230, 236);*/
+    background-color: rgb(218, 221, 192);
+    grid-area: o;
+    position: relative;
+}
+
+.opening p{
+    font-size: 1.5em;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+.opening h1 {
+    color: black;
+    text-align: center; 
+}
+
+div.price { 
+    position: absolute; 
+    bottom: 250px; 
+    right: 10%; 
+    width: 251px; 
+    height: 251px; 
+    color: white; 
+    font-size: 60px; 
+    text-align: center; 
+    border: 5px solid white; 
+    border-radius: 50%; 
+    padding: 30px; 
+    box-shadow: 0 0 5px #808080; 
+    background:darkgreen;
+    transform: rotate(-8deg); 
+    transition: transform .5s ease;
+}
+
+div.price:hover { 
+    transform: rotate(0); 
+} 
+
+div.price small { 
+    display: block; 
+    font-size: 22px;
+} 
+
+.plaatje{
+    grid-area: p;
+    display: flex;
+    align-items: center;
+    background-color: rgb(136, 147, 158);
+}
+
+.plaatje img{
+    width: 100%;
+    box-shadow: -4px 1px 1px rgba(0,0,0,0.06);
+    padding: 5px;
+    object-fit: cover;
+}
+
+.vragen{
+  display: none;
+  /*grid-area: vr;*/
+  background-color: rgb(161, 212, 180);
+}
+.vragen h1{
+    text-align: center;
+    font-size: 40px;
+}
+.vragen-list{
+    font-size: 2em;
+    margin-left: 150px;
+}
+
+.vrijwilliger{
+    display: none;
+    /*grid-area: vi;*/
+    background-color: cornflowerblue;
+    padding: 15px;
+    text-align: center;
+}
+
+.contact{
+    display:none;
+    /*grid-area: c;*/
+    background-color:  #F07D00;
+    text-align: center;
+}
+
+.contact p{
+    font-size: 1.5em;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+.footer{
+    position: relative;
+    background-color:rgb(161, 212, 180);
+    grid-area: f;
+    padding: 5px; 
+    display: inline;
+}
+
+.footer h2{
+    margin-left: 150px;
+}
+
+.footer img{
+    position:absolute;
+    top: 10px;
+    left: 25px;
+    overflow: hidden;
+}

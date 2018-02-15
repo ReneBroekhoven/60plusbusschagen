@@ -1,0 +1,9 @@
+.formulier{
+    display: block;
+    float: right;
+    margin-left: 400px;
+}
+
+label{
+    display: block;
+}
