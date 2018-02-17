@@ -12,10 +12,8 @@ class Contact extends Component {
           Telefoon : 0224-272888 (werkdagen 14.00 tot 15.30 uur)<br/>
           {/*Telefoon : afzeggen van een rit <strong>op op dezelfde dag</strong> : 06-81617269 */}
         </p>  
-        <h2>Email</h2>
-        <p>
-          secretariswg60plusbus@gmail.com
-        </p>  
+        <h2>Email : info@60plusbusschagen.nl</h2>  
+        
         <h2>Bestuur 60+ Bus</h2>
         <p>
           Voorzitter: Simon Carmio<br/>
@@ -26,7 +24,7 @@ class Contact extends Component {
           Coördinator technische zaken : Willem de Zeeuw<br/>
         </p>
         <p>
-          Het bestuur is te bereiken via email : secretariswg60plusbus@gmail.com
+          Het bestuur is te bereiken via email : bestuur@60plusbusschagen.nl
         </p> 
 
         {/*
