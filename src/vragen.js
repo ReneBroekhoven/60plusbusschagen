@@ -44,7 +44,7 @@ let vragenEnAntwoorden  = [
   { 
     nummer: 8,
     "vraag": `Heeft de 60+ bus afwijkende rijtijden ? `,
-    "antwoord": `Ja
+    "antwoord": `Ja.
                 Kerstdagen     van 10.00 tot 17.00 uur
                 Nieuwjaarsdag  van 13.00 tot 17.00 uur
                 Overige feestdagen  van 09.00 tot 17.00 uur`  
@@ -57,7 +57,7 @@ let vragenEnAntwoorden  = [
   { 
     nummer: 10,
     "vraag": `Heefy de 60+ bus een 'vaste lijst' ?`,
-   "antwoord": `Ja
+   "antwoord": `Ja.
                 Als u dagelijks of wekelijks op dezelfde tijd naar dezelfde 
                 bestemming wilt reizen, kunt u een plaats op de “vaste lijst” aanvragen.
                 U hoeft dan niet elke rit afzonderlijk te reserveren. 

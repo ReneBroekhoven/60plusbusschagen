@@ -6,7 +6,18 @@ h2{
   text-align: left;  
 }
 
+.inhoud{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "t f";
+}
+
+.tekst{
+   width: 400px;
+   grid-area: t;
+}
 .formulier{
-  display: inline-block;
-  float: right;
+  width: 300px;
+  grid-area: f; 
 }

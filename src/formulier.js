@@ -41,24 +41,40 @@ class Formulier extends Component {
 
   render() {
     return (
-      <form onSubmit={this.handleSubmit} className="formulier">
-      <label>
-          Naam:
-          <input type="text" value={this.state.name} onChange={this.handleChange} />
-        </label>
-        <label>
-          Email:
-          <input type="email" value={this.state.email} onChange={this.handleChange} />
-        </label>
-        <label>
-          Boodschap:
-          <textarea value={this.state.message} name="textarea" onChange={this.handleChange} />
-        </label>  
-      
-        <input type="submit" value="Submit" />
-      </form>
+     
+      <form onSubmit={this.handleSubmit} className="form">
+        
+        <h2>CONTACT</h2>
+       
+        <p type="Naam:">
+          <input type="text" value={this.state.name} onChange={this.handleChange}  placeholder="Schrijf uw naam hier.."/>
+        </p>
+
+        <p type="Email:">
+          <input type="email" value={this.state.email} onChange={this.handleChange}  placeholder=".. en uw email adres .."/>
+        </p>
+
+        <p type="Boodschap:">
+          <input type="text" value={this.state.message} onChange={this.handleChange}  placeholder="Wat wilt u opns vertellen.."/>
+        </p>
+
+        <button>Verzend ..</button>
+
+      <div>
+        <span class="fa fa-phone"></span>0224-222877
+        <span class="fa fa-envelope-o"></span>info@60plusbusschagen.nl
+      </div>
+
+    </form>
+
+
+
+
     );
   }
 }
  
 export default Formulier;
+
+//Made by Ariana Lynn
+//April 20, 2016
