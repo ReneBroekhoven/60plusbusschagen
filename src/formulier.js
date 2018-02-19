@@ -5,32 +5,20 @@ import './formulier.css';
 class Formulier extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      name: '',
-      email: '',
-      message: ''
-    };
-
-    this.handleChange = this.handleChange.bind(this);
+   
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-  handleChange(event) {
-    this.setState({name: event.target.value});
-  }
-
   handleSubmit(event) {
-    alert('Uw formulier is verzonden: ' + this.state.value);
+    alert('Uw formulier is verzonden !');
     event.preventDefault();
 
-    // waarom doe ik dit?
-    const data = {
-      name: this.state.name
-    };
-
-    // https://60plusbusschagen.nl/formulier_verwerker.php
-    axios.post('/formulier_verwerker.php',
-      {name: "test"})
+    const data = new FormData(event.target);
+    
+    fetch('formulier_verwerker.php',
+      { method: "POST",
+        body: data
+    })
       .then(function (response) {
         console.log(response);
       })
@@ -47,22 +35,22 @@ class Formulier extends Component {
         <h2>CONTACT</h2>
        
         <p type="Naam:">
-          <input type="text" value={this.state.name} onChange={this.handleChange}  placeholder="Schrijf uw naam hier.."/>
+          <input type="text" id="name" name="name" placeholder="Schrijf uw naam hier.."/>
         </p>
-
+      
         <p type="Email:">
-          <input type="email" value={this.state.email} onChange={this.handleChange}  placeholder=".. en uw email adres .."/>
+          <input type="email" id="email" name="email"  placeholder=".. en uw email adres .."/>
         </p>
 
         <p type="Boodschap:">
-          <input type="text" value={this.state.message} onChange={this.handleChange}  placeholder="Wat wilt u opns vertellen.."/>
+          <textarea id="message" name="message" maxlength="500" rows="8" cols="40" placeholder="Wat wilt u opns vertellen.."/>
         </p>
 
         <button>Verzend ..</button>
 
       <div>
-        <span class="fa fa-phone"></span>0224-222877
-        <span class="fa fa-envelope-o"></span>info@60plusbusschagen.nl
+        <span className="fa fa-phone"></span>0224-272888
+        <span className="fa fa-envelope-o"></span>info@60plusbusschagen.nl
       </div>
 
     </form>

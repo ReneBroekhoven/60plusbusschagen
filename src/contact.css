@@ -18,6 +18,7 @@ h2{
    grid-area: t;
 }
 .formulier{
+  margin-top: 50px;
   width: 300px;
   grid-area: f; 
 }
