@@ -9,7 +9,7 @@ class Formulier extends Component {
   }
 
   handleSubmit(event) {
-    alert('Uw formulier is verzonden !');
+    //alert('Uw formulier is verzonden !');
     event.preventDefault();
 
     const data = new FormData(event.target);
@@ -19,17 +19,18 @@ class Formulier extends Component {
         body: data
     })
       .then(function (response) {
-        console.log(response);
+        alert('Uw formulier is verzonden !');
+        document.getElementById("formulier").reset();
       })
       .catch(function (error) {
-        console.log(error);
+        alert('Er is iets misgegaan; probveer opnieuw !')
       });
   }
 
   render() {
     return (
      
-      <form onSubmit={this.handleSubmit} className="form">
+      <form id="formulier" onSubmit={this.handleSubmit} className="form">
         
         <h2>CONTACT</h2>
        

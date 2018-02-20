@@ -3,7 +3,8 @@ import {
   BrowserRouter as Router,
   Route,
   NavLink, 
-  Switch
+  Switch, 
+  Redirect
 } from "react-router-dom";
 import Home from "./home";
 import Reserveringen from "./reserveringen";
@@ -89,7 +90,7 @@ class Main extends Component {
         <div className="container">
           <div className="hoofdtitel">
             <img src={logo} id="logo-nav" className="logo" alt="logo" />
-            <h1 className="hoofdtitel">60+ Bus Schagen</h1>
+            <h1>60+ Bus Schagen</h1>
           </div>
           <ul className="header">
             <li><NavLink exact to="/">Home</NavLink></li>
@@ -112,11 +113,12 @@ class Main extends Component {
               <Route path="/vragen"         component={Vragen}/>
               <Route path="/vrijwilligers"  component={Vrijwilligers}/>
               <Route path="/contact"        component={Contact}/>
+              <Route path="*"    render={ ()=> <Redirect to="/" />} />
               <Route component={NotFound} />
             </Switch>
           </div>
           <footer className="footer">
-            <p>&copy;&nbsp;&nbsp;Stichting 60+ bus Schagen&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reserveringen elke werkdag van 14.00 tot 15.30 uur. telefoonnummer <strong>0224-272888</strong>&nbsp;&nbsp; Ritprijs € 1,- / retour € 2,- / 10-rittenkaart € 10,-</p>
+            <p>&copy;&nbsp;&nbsp;<small>Stichting 60+ bus Schagen</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reserveringen elke werkdag van 14.00 tot 15.30 uur. <strong>0224-272888</strong>&nbsp;&nbsp; Ritprijs €1,- / retour €2,- / 10-rittenkaart €10,-</p>
           </footer>
         </div>
       </Router>  

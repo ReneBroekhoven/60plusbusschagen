@@ -42,7 +42,7 @@ h1, h2, h3, p, ul, li {
   margin: 0;
   display:grid;
   grid-template-columns : 1fr;
-  grid-template-rows: 60px 104px 1fr 60px;
+  grid-template-rows: 55px 90px 1fr 50px;
   /*min-height: 85vh;*/
   height: 100%;
   grid-template-areas: 
@@ -75,33 +75,47 @@ h1, h2, h3, p, ul, li {
   background-color:  var(--active-item);
 }
 
+ul li .active{
+  color: black;
+}
+
 .hoofdtitel{
   color: rgb(64, 83, 29);
   text-align: center;
-  font-size: 2.5rem;
-  font-weight: bolder;
+  font-size: 1.5rem;
+  font-weight: bold;
   margin: 0;
-  padding: 1px;
+  padding: 0;
   background-image: url('60+bus1.png');
   background-position: center;
   height: 100%;
   grid-area : hoofdtitel;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.hoofdtitel h1{
+  display:grid;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
 }
 
 /* bij < 900px de navbar kleiner maken of met de drie streepjes*/
 ul.header li {
-    /*display: inline-block;*/
-    flex-basis: auto;
-    flex-grow: 0;
-    flex-shrink: 2;
     list-style-type: none;
     margin: 0;
     background-color: var(--kop-staart-items);
-    padding: 1px;
-    margin-right: 20px;
+    padding: 4px;
+    margin: 10px 10px;
     border-radius: 5px;
     transition: background-color 0.3s ease-out;
-  }
+    color:white;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+   }
 
 ul.header li:hover{
   background-color: var(--hover-item);
@@ -109,31 +123,31 @@ ul.header li:hover{
 
 ul.header {
   background-color:var(--kop-staart);
-  padding: 10px;
+  padding: 4px;
   display:flex;
   justify-content: center;
   flex-wrap: wrap;
   margin-top: 0;
   grid-area: header;
+  margin-bottom: 10px;
 }
 
 ul.header li a {
   color: #FFF;
   font-weight: bold;
   text-decoration: none;
-  padding: 15px;
-  margin-top: 5px;
-  margin-left: 5px;
-  margin-right: 5px;
-  border-radius: 5%;
-  display: inline-block;
+  padding: 5px;
+  margin: 0;
+  border-radius: 5px;
+  /*display: block;*/
   transition: color 0.3s ease-out;
 }
 
+/*
 ul.header li a:hover {
   color: rgb(224, 198, 198);
 }
-
+*/
 /* padding bottom 0 omdat de footyer andere in de content komt te staan ? */
 .content {
   background-color: var(--content);
@@ -157,6 +171,12 @@ footer{
   padding: 10px;
   margin-bottom: 0;
   grid-area: footer;
-  max-height: 60px;
+  /*max-height: 40px;*/
   align-self: end;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer p{
+  font-size: 0.9em;
 }
