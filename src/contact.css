@@ -1,5 +1,6 @@
 h1{
     text-align: center;
+    margin-top: -20px;
 }
 
 h2{
@@ -9,16 +10,16 @@ h2{
 .inhoud{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  grid-template-areas: "t f";
+  align-items: center;
+  justify-content: center;
 }
 
 .tekst{
-   width: 400px;
-   grid-area: t;
+   width: 80%;
+
 }
 .formulier{
-  margin-top: 50px;
-  width: 300px;
-  grid-area: f; 
+  margin-top: 0;
+  width: 100%;
+
 }

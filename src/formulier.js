@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import axios from 'axios';
 import './formulier.css';
  
 class Formulier extends Component {
@@ -43,19 +42,17 @@ class Formulier extends Component {
         </p>
 
         <p type="Boodschap:">
-          <textarea id="message" name="message" maxlength="500" rows="8" cols="40" placeholder="Wat wilt u opns vertellen.."/>
+          <textarea id="message" name="message" maxLength="500" rows="8" cols="40" placeholder="Wat wilt u ons vertellen.."/>
         </p>
 
         <button>Verzend ..</button>
-
-      <div>
-        <span className="fa fa-phone"></span>0224-272888
-        <span className="fa fa-envelope-o"></span>info@60plusbusschagen.nl
+      {/* met toevoeging microdata */}
+      <div itemscope itemtype="http://schema.org/Organisation">
+        <span className="fa fa-phone"></span><span itemprop="telephone"><a href="tel:+31224272888" className="telefoon">0224-272888</a></span>
+        <span className="fa fa-envelope-o"></span><a href="mailto:info@60plusbusschagen.nl" className="email">info@60plusbusschagen.nl</a>
       </div>
 
     </form>
-
-
 
 
     );

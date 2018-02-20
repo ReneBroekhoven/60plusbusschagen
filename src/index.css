@@ -7,14 +7,30 @@
   --hover-item: rgb(69, 182, 69);
   --active-item:  rgb(116, 231, 116);
 }
+
+html{
+  padding:0;
+  margin:0;
+  height: 100%;
+}
+
+#root{
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
 body {
     background-color: var(--body);
-    padding: 20px 20px;
+    /*padding: 20px 20px;*/
     margin: 0;
-  }
+    padding: 0;
+    /*height: 100vh; heeft waarschijnlijk geen zin*/
+    height: 100%;
+}
 
 h1, h2, h3, p, ul, li {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif
 }
 
 .theme{
@@ -22,10 +38,19 @@ h1, h2, h3, p, ul, li {
 }
 
 .container{
+  padding: 0;
+  margin: 0;
   display:grid;
-  grid-template-columns : 100%;
+  grid-template-columns : 1fr;
   grid-template-rows: 60px 104px 1fr 60px;
-  min-height: 85vh;
+  /*min-height: 85vh;*/
+  height: 100%;
+  grid-template-areas: 
+  "hoofdtitel"
+   "header"
+   "content"
+   "footer";
+   
 }
 
 .logo{
@@ -59,6 +84,8 @@ h1, h2, h3, p, ul, li {
   padding: 1px;
   background-image: url('60+bus1.png');
   background-position: center;
+  height: 100%;
+  grid-area : hoofdtitel;
 }
 
 /* bij < 900px de navbar kleiner maken of met de drie streepjes*/
@@ -86,7 +113,8 @@ ul.header {
   display:flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 0
+  margin-top: 0;
+  grid-area: header;
 }
 
 ul.header li a {
@@ -112,6 +140,7 @@ ul.header li a:hover {
   height:100%;
   padding: 50px 50px 0 50px;
   margin-bottom: 50px;
+  grid-area: content;
 }
 
 .content h2 {
@@ -127,4 +156,7 @@ footer{
   background: var(--kop-staart);
   padding: 10px;
   margin-bottom: 0;
+  grid-area: footer;
+  max-height: 60px;
+  align-self: end;
 }
