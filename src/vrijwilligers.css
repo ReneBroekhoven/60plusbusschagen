@@ -1,22 +1,31 @@
-.content-vrijwilligers h1{
-    text-align: center;
-}
-
-.tekst-vrijwilligers{
-    margin-left: 30%;
-    margin-right: 30%;
-    padding: 20px;
-    text-align: left;
-}
-
-.oproep{
-    color: rgb(240, 50, 50);
-    font-weight: 2em;
-    width: 400px;
-    border: 1px solid red;
-    border-radius: 5px;
-    padding: 5px;
-    background-color: rgb(233, 194, 194);
-    transform: rotate(-15deg);
-    box-shadow: 4px 8px #c0acac;
-}
+.content-vrijwilligers{
+    display: grid;
+    grid-template-columns: 1fr minmax(300px, 500px) 1fr;
+    justify-items: center;
+    align-items: center;
+  
+  }
+  
+   h1{
+      text-align: center;
+  }
+  
+  .tekst-vrijwilligers{
+      padding: 20px;
+      text-align: left;
+      display: relative;
+  }
+  
+  .oproep{
+      position: absolute;
+      color: rgb(240, 50, 50);
+      font-weight: 2em;
+      width: 400px;
+      border: 1px solid red;
+      border-radius: 5px;
+      padding: 5px;
+      left: 200px;
+      background-color: rgb(233, 194, 194);
+      transform: rotate(-15deg);
+      box-shadow: 4px 8px #c0acac;
+  }

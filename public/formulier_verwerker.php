@@ -1,10 +1,10 @@
 <?php
 
-//if(!isset($_POST['submit']))
-//{
-//	//This page should not be accessed directly. Need to submit the form.
-//	echo "error; you need to submit the form!";
-//} 
+if(!isset($_POST['submit']))
+{
+	//This page should not be accessed directly. Need to submit the form.
+	echo "error; you need to submit the form!";
+} 
 
 $name = $_POST['name'];
 $visitor_email = $_POST['email'];
@@ -13,7 +13,7 @@ $message = $_POST['message'];
 
 if(IsInjected($visitor_email))
 {
-    echo "Bad email value!";
+    echo "email adres is onjuist!";
     exit;
 }
 

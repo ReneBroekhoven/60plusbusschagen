@@ -1,63 +1,64 @@
-:root{
-  --kop-staart: #A9ECA2;
+:root {
+  --kop-staart: #a9eca2;
   --kop-staart-items: rgb(31, 112, 22);
-  --body: #F5FFCB;
-  --content: #FFE3B0;
-  --rest: #F5C8BD;
+  --body: #f5ffcb;
+  --content: #ffe3b0;
+  --rest: #f5c8bd;
   --hover-item: rgb(69, 182, 69);
-  --active-item:  rgb(116, 231, 116);
+  --active-item: rgb(116, 231, 116);
 }
 
-html{
-  padding:0;
-  margin:0;
+html {
+  padding: 0;
+  margin: 0;
   height: 100%;
 }
 
-#root{
+#root {
   padding: 0;
   margin: 0;
   height: 100%;
 }
 
 body {
-    background-color: var(--body);
-    /*padding: 20px 20px;*/
-    margin: 0;
-    padding: 0;
-    /*height: 100vh; heeft waarschijnlijk geen zin*/
-    height: 100%;
+  background-color: var(--body);
+  /*padding: 20px 20px;*/
+  margin: 0;
+  padding: 0;
+  /*height: 100vh; heeft waarschijnlijk geen zin*/
+  height: 100%;
 }
 
-h1, h2, h3, p, ul, li {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Verdana, sans-serif;
 }
 
-.theme{
+.theme {
   display: inline;
 }
 
-.container{
+.container {
   padding: 0;
   margin: 0;
-  display:grid;
-  grid-template-columns : 1fr;
+  display: grid;
+  grid-template-columns: 1fr;
   grid-template-rows: 55px 90px 1fr 50px;
-  /*min-height: 85vh;*/
   height: 100%;
-  grid-template-areas: 
-  "hoofdtitel"
-   "header"
-   "content"
-   "footer";
-   
+  grid-template-areas:
+    "hoofdtitel"
+    "header"
+    "content"
+    "footer";
 }
 
-.logo{
+.logo {
   transform: rotate(-90deg);
-}
-
-#logo-nav{
   width: 100px;
   height: auto;
   position: absolute;
@@ -65,38 +66,47 @@ h1, h2, h3, p, ul, li {
   left: 75px;
 }
 
-#logo-titel{
-  width: 70px;
-  height: 100%;
-  margin-top: -20px;
+@media all and (max-width: 700px) {
+  .logo {
+    width: 50px;
+    top: 100px;
+    left: 30px;
+  }
 }
 
-.active{
-  background-color:  var(--active-item);
+@media all and (max-width: 500px) {
+  .hoofdtitel h1 {
+    font-size: 35px;
+    margin-top: -10px ;
+  }
 }
 
-ul li .active{
+.active {
+  background-color: var(--active-item);
+}
+
+ul li .active {
   color: black;
 }
 
-.hoofdtitel{
+.hoofdtitel {
   color: rgb(64, 83, 29);
   text-align: center;
   font-size: 1.5rem;
   font-weight: bold;
   margin: 0;
   padding: 0;
-  background-image: url('60+bus1.png');
+  background-image: url("60+bus1.png");
   background-position: center;
   height: 100%;
-  grid-area : hoofdtitel;
+  grid-area: hoofdtitel;
   display: grid;
   align-items: center;
   justify-content: center;
 }
 
-.hoofdtitel h1{
-  display:grid;
+.hoofdtitel h1 {
+  display: flex;
   align-items: center;
   justify-content: center;
   padding: 10px;
@@ -104,27 +114,28 @@ ul li .active{
 
 /* bij < 900px de navbar kleiner maken of met de drie streepjes*/
 ul.header li {
-    list-style-type: none;
-    margin: 0;
-    background-color: var(--kop-staart-items);
-    padding: 4px;
-    margin: 10px 10px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease-out;
-    color:white;
-    display: grid;
-    align-items: center;
-    justify-content: center;
-   }
+  list-style-type: none;
+  margin: 0;
+  background-color: var(--kop-staart-items);
+  padding: 4px;
+  margin: 10px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-out;
+  color: white;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  /*flex: 1;*/
+}
 
-ul.header li:hover{
+ul.header li:hover {
   background-color: var(--hover-item);
 }
 
 ul.header {
-  background-color:var(--kop-staart);
+  background-color: var(--kop-staart);
   padding: 4px;
-  display:flex;
+  display: flex;
   justify-content: center;
   flex-wrap: wrap;
   margin-top: 0;
@@ -133,7 +144,7 @@ ul.header {
 }
 
 ul.header li a {
-  color: #FFF;
+  color: #fff;
   font-weight: bold;
   text-decoration: none;
   padding: 5px;
@@ -151,7 +162,7 @@ ul.header li a:hover {
 /* padding bottom 0 omdat de footyer andere in de content komt te staan ? */
 .content {
   background-color: var(--content);
-  height:100%;
+  height: 100%;
   padding: 50px 50px 0 50px;
   margin-bottom: 50px;
   grid-area: content;
@@ -166,7 +177,7 @@ ul.header li a:hover {
   margin-bottom: 10px;
 }
 
-footer{
+footer {
   background: var(--kop-staart);
   padding: 10px;
   margin-bottom: 0;
@@ -177,6 +188,6 @@ footer{
   flex-wrap: wrap;
 }
 
-footer p{
+footer p {
   font-size: 0.9em;
 }

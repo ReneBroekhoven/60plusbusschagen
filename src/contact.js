@@ -22,12 +22,12 @@ class Contact extends Component {
               Voorzitter: Simon Carmio<br/>
               Secretaris : René Broekhoven<br/>
               Penningmeester : Wil Polder<br/>
-              Coördinator reserveringen : Hansje Kalff<br/>
+              Coördinator passagiers : Hansje Kalff<br/>
               Coördinator chauffeurs : Jaap Schuurman<br/>
               Coördinator technische zaken : Willem de Zeeuw<br/>
             </p>
             <p>
-              Het bestuur is te bereiken via email : bestuur@60plusbusschagen.nl
+              Het bestuur is te bereiken via email : info@60plusbusschagen.nl
             </p> 
           </div>
           
