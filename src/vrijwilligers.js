@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./vrijwilligers.css";
+import {NavLink} from "react-router-dom";
 
 class Vrijwilligers extends Component {
   render() {
@@ -19,7 +20,7 @@ class Vrijwilligers extends Component {
             <p className="oproep">
             <strong>
             De werkgroep 60+ bus is op dit moment nog op zoek naar
-            vrijwilligers. Ga naar "Contact"
+            vrijwilligers. Ga naar <NavLink className="interne-link" to="/contact">Contact</NavLink> en vul het formulier in !
             </strong>
             </p>
           </div>

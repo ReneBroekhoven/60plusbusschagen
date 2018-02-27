@@ -3,6 +3,7 @@
     grid-template-columns: 1fr minmax(300px, 500px) 1fr;
     justify-items: center;
     align-items: center;
+    background-color: hsl(201, 71%, 77%);
   
   }
   
@@ -13,19 +14,23 @@
   .tekst-vrijwilligers{
       padding: 20px;
       text-align: left;
-      display: relative;
   }
   
-  .oproep{
-      position: absolute;
+  .tekst-vrijwilligers .oproep{
+      position: relative;
       color: rgb(240, 50, 50);
       font-weight: 2em;
       width: 400px;
       border: 1px solid red;
       border-radius: 5px;
       padding: 5px;
-      left: 200px;
+      top:50px;
+      left: -100px;
       background-color: rgb(233, 194, 194);
       transform: rotate(-15deg);
       box-shadow: 4px 8px #c0acac;
+  }
+
+  .interne-link{
+      text-decoration: none;
   }

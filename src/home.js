@@ -18,10 +18,13 @@ class Home extends Component {
               width="600px"
               height="600px"
             />
+            <figcaption>
+              de enige en echte 60+ bus ..
+            </figcaption>
           </figure>
           <div className="tekst">
             <p>
-              De 60+ bus is een initiatief van vrijwiliigers uit de stad Schagen
+              De 60+ bus is een initiatief van vrijwilligers uit de stad Schagen
               en is bedoeld om ouderen op een eenvoudige en goedkope manier te
               helpen met vervoerswensen in de stad Schagen.<br />
               Op deze manier proberen wij de ouderen te ondersteunen in hun

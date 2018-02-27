@@ -13,12 +13,26 @@ h2 {
   grid-gap: 100px;
   align-items: center;
   justify-content: center;
+  padding: 20px;
+}
+@media all and (max-width: 800px){
+  .inhoud{
+    grid-template-columns: minmax(300px, max-content);
+  }
+  .formulier{
+    margin-bottom: 50px;
+  }
 }
 
 .tekst {
+  justify-self: center;
   width: 100%;
+  background-color: hsl(201, 71%, 77%);
+  padding: 15px;
+  margin-right: 100px
 }
 .formulier {
+  margin-left: 50px;
   margin-top: 0;
   width: 100%;
 }

@@ -78,6 +78,7 @@ li {
   .hoofdtitel h1 {
     font-size: 35px;
     margin-top: -10px ;
+    text-align: center;
   }
 }
 
