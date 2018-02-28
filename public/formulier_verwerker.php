@@ -19,7 +19,7 @@ if(IsInjected($visitor_email))
 
 $email_from = 'secretariswg60plusbus@gmail.com';//<== update the email address
 $email_subject = "Nieuw Formulier";
-$email_body = "Afzender bericht : ". $name. "\rEmailadres : " .$visitor_email . "\r\rInhoud is :\r\r" . $message;
+$email_body = "Afzender    : ". $name. "\rEmailadres : " .$visitor_email . "\r\rInhoud:\r\r" . $message;
 
 
 $to = "secretariswg60plusbus@gmail.com";
