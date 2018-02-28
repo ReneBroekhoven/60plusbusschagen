@@ -29,8 +29,10 @@ h2 {
   width: 100%;
   background-color: hsl(201, 71%, 77%);
   padding: 15px;
-  margin-right: 100px
+  margin-right: 100px;
+  border-radius: 5px;
 }
+
 .formulier {
   margin-left: 50px;
   margin-top: 0;

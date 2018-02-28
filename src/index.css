@@ -47,6 +47,7 @@ li {
   padding: 0;
   margin: 0;
   display: grid;
+  border-radius: 5px;
   grid-template-columns: 1fr;
   grid-template-rows: 55px 90px 1fr 50px;
   height: 100%;
@@ -165,6 +166,7 @@ ul.header li a:hover {
   background-color: var(--content);
   height: 100%;
   padding: 50px 50px 0 50px;
+  border-radius: 5px;
   margin-bottom: 50px;
   grid-area: content;
 }

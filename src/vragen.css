@@ -6,6 +6,7 @@
   background-color: inherit;
   background-color: hsl(201, 71%, 77%);
   padding: 0;
+  border-radius: 5px;
 }
 
 h1 {

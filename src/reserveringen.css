@@ -12,5 +12,6 @@ h2 {
   grid-template-columns: 1fr minmax(300px, 500px) 1fr;
   justify-items: center;
   background-color:  hsl(201, 71%, 77%);
+  border-radius: 5px;
 
 }

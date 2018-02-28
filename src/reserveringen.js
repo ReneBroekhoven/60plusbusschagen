@@ -1,33 +1,36 @@
 import React, { Component } from "react";
 import "./reserveringen.css";
 
-
 class Reserveringen extends Component {
   render() {
     return (
-      <div >
+      <div>
         <h1>Reserveringen ( 0224-272888 )</h1>
         <div className="content-reserveringen">
-          <div className="ILB"></div>
+          <div className="ILB" />
           <div>
-            <h2>Reserveren van een rit</h2>
             <p>
-            U kunt een rit (zowel enkele reis als retour) boeken via de
-            telefonist(e) op telefoonnummer 0224-272888.<br />
-            Dit kan op werkdagen van 14.00 uur tot 15.30 uur.<br />
-            U kunt een rit reserveren één werkdag van te voren.
+              Elke werkdag van 14.00 tot 15.30 uur kunnen ritten worden aanvragd
+              via telefoonnummer 0224-272888.
             </p>
-            <p>Als u naar een <strong>medische afspraak</strong> vervoerd wilt worden, kan dat ruimer van te voren dan 1 werkdag.</p>
-            <br/>
-            <h2>Ritten op vaste tijdstippen</h2>
             <p>
-            Indien u op een vast tijdstip naar een vaste bestemming wilt rijden
-            kan een plaats op de 'vaste' lijst worden aangevraagd.<br />
-            Ook weer het het standaard reserveringsnummer : 0224-272888.
+              Ritten moeten één werkdag van tevoren worden aangevraagd.<br />
+              Op vrijdag kunnen ritten worden aangevraagd voor zaterdag, zondag
+              en maandag.
+            </p>
+            <p>
+              Ritten voor medische afspraken (arts, tandarts, fysiotherapeut,
+              Mediance, etc.) mogen verder van tevoren worden aangevraagd.
+            </p>
+            <p>
+              Als u dagelijks of wekelijks op dezelfde tijd naar dezelfde
+              bestemming wilt reizen, kunt u een plaats op de{" "}
+              <strong>"vaste lijst"</strong> aanvragen. U hoeft dan niet elke
+              rit afzonderlijk te reserveren. U belt alleen af bij verhindering.
             </p>
           </div>
-          <div className="ILB"></div>
-        </div>  
+          <div className="ILB" />
+        </div>
       </div>
     );
   }

@@ -10,6 +10,7 @@ import Home from "./home";
 import Reserveringen from "./reserveringen";
 import Vragen from "./vragen";
 import Vrijwilligers from "./vrijwilligers";
+import Verhaal from "./verhaal";
 import Contact from "./contact";
 import logo from "./60+bus1.png";
 import NotFound from "./NotFound";
@@ -104,6 +105,9 @@ class Main extends Component {
               <NavLink to="/vrijwilligers">Vrijwilligers</NavLink>
             </li>
             <li>
+              <NavLink to="/verhaal">Ons verhaal</NavLink>
+            </li>
+            <li>
               <NavLink to="/contact">Contact</NavLink>
             </li>
           </ul>
@@ -120,6 +124,7 @@ class Main extends Component {
               <Route path="/reserveringen" component={Reserveringen} />
               <Route path="/vragen" component={Vragen} />
               <Route path="/vrijwilligers" component={Vrijwilligers} />
+              <Route path="/verhaal" component={Verhaal} />
               <Route path="/contact" component={Contact} />
               <Route render={() => <Redirect to="/" />} />
               {/*<Route component={NotFound} />*/}

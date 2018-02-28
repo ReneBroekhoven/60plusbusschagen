@@ -33,6 +33,7 @@ class Formulier extends Component {
     const data = new FormData(event.target);
     let emptyForm = this.emptyForm;  // this is te ver weggestopt in de fetch
     // NOTE: you access FormData fields with `data.get(fieldName)`
+    const form = event.target;
 
     fetch("formulier_verwerker.php", {
       method: "POST",
@@ -41,16 +42,19 @@ class Formulier extends Component {
       .then(function(response) {
         alert("Uw formulier is verzonden !");
         //document.getElementById("formulier").reset(); // uncontrolled manier
+
+        console.log("de naam is : "+ form.elements.name.value);
         emptyForm();
       })
       .catch(function(error) {
         alert("Er is iets misgegaan; probeer opnieuw : " + error);
       });
   }
-
+    //!! eventueel vergeet de noValidate niet uit te zetten 
+    //(alleen de browser validatie werkt nu niet meer)!
   render() {
     return (
-      <form id="formulier" onSubmit={this.handleSubmit} className="form">
+      <form noValidate id="formulier" onSubmit={this.handleSubmit} className="form">
         <h2>CONTACT</h2>
 
         <p type="Naam:">
@@ -72,6 +76,7 @@ class Formulier extends Component {
             value={this.state.email}
             onChange={this.handleChange}
             placeholder=".. en uw email adres .."
+            required
           />
         </p>
 
