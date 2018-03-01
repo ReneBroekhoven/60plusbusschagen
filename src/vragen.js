@@ -26,8 +26,8 @@ let vragenEnAntwoorden = [
   {
     nummer: 5,
     vraag: `Ik ben verhinderd; hoe kan ik de 60+ bus afzeggen ?`,
-    antwoord: `U kunt afbellen via het noodnummer 06-81617269.
-                Dit nummer is niet bestemd voor het maken van reserveringen.`
+    antwoord: `Via telefoonnummer 0224-272888. Als u plotseling verhinderd bent, kunt u afbellen via 06-81617269.
+               (Dit nummer is niet bestemd voor het maken van reserveringen.)`
   },
   {
     nummer: 6,
@@ -112,7 +112,7 @@ class Vragen extends Component {
           <div className="ILB"></div>
           <div className="vragen-tekst">
             <h3>
-            Onderstaand zijn de veel gestelde vragen. Klik op de vraag om het
+            Onderstaand zijn een aantal veel gestelde vragen. Klik op de vraag om het
             antwoord te zien.
             </h3>
             <ul>

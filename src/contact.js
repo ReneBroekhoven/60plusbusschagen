@@ -11,8 +11,8 @@ class Contact extends Component {
           <div className="tekst">
             <h2>Reserveren</h2>
             <p>
-              Telefoon : 0224-272888 (werkdagen 14.00 tot 15.30 uur)<br/>
-              {/*Telefoon : afzeggen van een rit <strong>op op dezelfde dag</strong> : 06-81617269 */}
+              Telefoon : 0224-272888 op werkdagen van 14.00 tot 15.30 uur<br/>
+              (<em>Op korte termijn <strong>afzeggen</strong> van een rit : 06-81617269)</em>
             </p>  
             <h2>Email</h2>
             <p>info@60plusbusschagen.nl</p>  
