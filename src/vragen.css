@@ -1,12 +1,18 @@
 .content-vragen {
   display: grid;
-  grid-template-columns: 1fr minmax(300px, 600px) 1fr;
+  grid-template-columns: 1fr minmax(350px, 700px) 1fr;
   justify-items: center;
   align-items: center;
-  background-color: inherit;
-  background-color: hsl(201, 71%, 77%);
+
   padding: 0;
   border-radius: 5px;
+}
+
+.vragen-tekst{
+  background-color: var(--item);
+  padding:15px;
+  border-radius: 15px;
+  box-shadow:0 0 40px -10px #000;
 }
 
 h1 {

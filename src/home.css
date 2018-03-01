@@ -1,7 +1,7 @@
 .content-home{
   display: flex;
   display: -webkit-flex;
-  background-color:  hsl(201, 71%, 77%);
+  background-color:  var(--item);
 }
 
 h1{
@@ -30,15 +30,15 @@ h1{
 .figure_1 figcaption{
     margin-top: 5px;
     margin-left: 100px;
-    font-weight : bolder;
+    font-size: 0.8em;
     font-family: sans-serif;
     color: rgb(22, 2, 2);
 }
 
 .figure_2 figcaption{
   margin-top: 5px;
-  margin-left: 100px;
-  font-weight : bolder;
+  margin-left: 200px;
+  font-size: 0.8em;
   font-family: sans-serif;
   color: rgb(22, 2, 2);
 }
@@ -48,4 +48,5 @@ h1{
   margin-left: 0;
   min-width: 200px;
   max-width: 400px;
+  background-color: var(--item);
 }

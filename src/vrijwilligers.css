@@ -1,37 +1,39 @@
-.content-vrijwilligers{
-    display: grid;
-    grid-template-columns: 1fr minmax(300px, 500px) 1fr;
-    justify-items: center;
-    align-items: center;
-    background-color: hsl(201, 71%, 77%);
-    border-radius: 5px;
-  
-  }
-  
-   h1{
-      text-align: center;
-  }
-  
-  .tekst-vrijwilligers{
-      padding: 20px;
-      text-align: left;
-  }
-  
-  .tekst-vrijwilligers .oproep{
-      position: relative;
-      color: rgb(240, 50, 50);
-      font-weight: 2em;
-      width: 400px;
-      border: 1px solid red;
-      border-radius: 5px;
-      padding: 5px;
-      top:50px;
-      left: -100px;
-      background-color: rgb(233, 194, 194);
-      transform: rotate(-15deg);
-      box-shadow: 4px 8px #c0acac;
-  }
+.content-vrijwilligers {
+  display: grid;
+  grid-template-columns: 1fr minmax(300px, 500px) 1fr;
+  justify-items: center;
+  align-items: center;
+}
 
-  .interne-link{
-      text-decoration: none;
-  }
+h1 {
+  text-align: center;
+}
+
+.tekst-vrijwilligers {
+  padding: 20px;
+  text-align: left;
+  background-color: var(--item);
+  border-radius:5px;
+  box-shadow:0 0 40px -10px #000;
+}
+
+.tekst-vrijwilligers .oproep {
+  position: relative;
+  color: rgb(240, 50, 50);
+  font-weight: ;
+  font-size: 1.2em;
+  width: 500px;
+  border: 1px solid red;
+  border-radius: 10%;
+  padding: 5px;
+  top: 100px;
+  left: -100px;
+  background-color: rgb(233, 194, 194);
+  transform: rotate(-15deg);
+  box-shadow: 4px 8px #c0acac;
+}
+
+.interne-link {
+  text-decoration: none;
+  color:green;
+}

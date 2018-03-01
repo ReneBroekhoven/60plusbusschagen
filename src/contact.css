@@ -27,10 +27,11 @@ h2 {
 .tekst {
   justify-self: center;
   width: 100%;
-  background-color: hsl(201, 71%, 77%);
+  background-color: var(--item);
   padding: 15px;
   margin-right: 100px;
   border-radius: 5px;
+  box-shadow:0 0 40px -10px #000;
 }
 
 .formulier {

@@ -4,7 +4,7 @@ import "./vragen.css";
 let vragenEnAntwoorden = [
   {
     nummer: 1,
-    vraag: "Wie kunnen er allemaal mee met de 60+ bus ?",
+    vraag: "Wie kunnen er mee met de 60+ bus ?",
     antwoord: `Personen van 55 jaar en ouder binnen de stad Schagen.`
   },
   {
@@ -110,7 +110,7 @@ class Vragen extends Component {
         <h1>Vragen ?</h1>
         <div className="content-vragen">
           <div className="ILB"></div>
-          <div className="tekst">
+          <div className="vragen-tekst">
             <h3>
             Onderstaand zijn de veel gestelde vragen. Klik op de vraag om het
             antwoord te zien.
@@ -128,6 +128,7 @@ class Vragen extends Component {
             ))}
             </ul>
           </div>
+          <div className="ILB"></div>
         </div>
       </div>
     );

@@ -15,23 +15,34 @@ h2 {
   
 }
 
-p{
+.content-verhaal p{
 font-size: 0.9em;
 }
 
 .geschiedenis{
   padding: 15px;
-  background-color:  hsl(201, 71%, 77%);
+  background-color: var(--item);
   border-radius: 5px;
+  box-shadow:0 0 40px -10px #000;
 }
 
 .sponsors{
   padding: 15px;
-  background-color:  hsl(201, 71%, 77%);
+  background-color: var(--item);
   border-radius: 5px;
+  box-shadow:0 0 40px -10px #000;
 }
 
-ul{
+.sponsors ul{
  list-style-type: square;
+}
+
+.sponsors li{
+  color: green;;
+}
+
+.sponsors a{
+  text-decoration: none;
+  color: green;
 }
 

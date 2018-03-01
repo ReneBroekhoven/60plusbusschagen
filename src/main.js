@@ -133,7 +133,7 @@ class Main extends Component {
           <footer className="footer">
             <p>
               &copy;&nbsp;&nbsp;<small>Stichting 60+ bus Schagen</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reserveringen
-              elke werkdag van 14.00 tot 15.30 uur. <strong>0224-272888</strong>&nbsp;&nbsp;
+              elke werkdag van 14.00 tot 15.30 uur : <strong>0224-272888</strong>.&nbsp;&nbsp;
               Ritprijs €1,- / retour €2,- / 10-rittenkaart €10,-
             </p>
           </footer>

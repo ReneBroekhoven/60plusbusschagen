@@ -9,9 +9,13 @@ h2 {
 
 .content-reserveringen {
   display: grid;
-  grid-template-columns: 1fr minmax(300px, 500px) 1fr;
+  grid-template-columns: 1fr minmax(300px, 700px) 1fr;
   justify-items: center;
-  background-color:  hsl(201, 71%, 77%);
-  border-radius: 5px;
+}
 
+.reserveringen-tekst {
+  background-color: var(--item);
+  border-radius: 5px;
+  padding: 15px;
+  box-shadow:0 0 40px -10px #000;
 }

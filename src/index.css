@@ -6,6 +6,7 @@
   --rest: #f5c8bd;
   --hover-item: rgb(69, 182, 69);
   --active-item: rgb(116, 231, 116);
+  --item: #ebcf9c;
 }
 
 html {
@@ -57,10 +58,9 @@ li {
     "content"
     "footer";
 }
-
-.logo {
+.hoofdtitel .logo {
   transform: rotate(-90deg);
-  width: 100px;
+  width: 75px;
   height: auto;
   position: absolute;
   top: 90px;

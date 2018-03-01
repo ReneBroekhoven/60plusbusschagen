@@ -8,9 +8,9 @@ class Reserveringen extends Component {
         <h1>Reserveringen ( 0224-272888 )</h1>
         <div className="content-reserveringen">
           <div className="ILB" />
-          <div>
+          <div className="reserveringen-tekst">
             <p>
-              Elke werkdag van 14.00 tot 15.30 uur kunnen ritten worden aanvragd
+              Elke werkdag van 14.00 tot 15.30 uur kunnen ritten worden aanvraagd
               via telefoonnummer 0224-272888.
             </p>
             <p>

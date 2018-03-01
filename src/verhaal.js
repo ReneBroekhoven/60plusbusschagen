@@ -2,10 +2,10 @@ import React, { Component } from "react";
 import "./verhaal.css";
 
 
-class Reserveringen extends Component {
+class Verhaal extends Component {
   render() {
     return (
-      <div >
+      <div>
         <h1>Ons verhaal</h1>
         <div className="content-verhaal">
           <div className="geschiedenis">
@@ -36,7 +36,7 @@ class Reserveringen extends Component {
             <p>
             Door de jaren heen hebben tientallen enthousiaste en gemotiveerde vrijwilligers tijd en energie gestoken 
             in de 60+ bus tot grote tevredenheid van de passagiers.
-            In 2013 vierde de 60+ bus het 25-jarig bestaan en in september 2017 werd de 300.000ste passagier vervoerd.\
+            In 2013 vierde de 60+ bus het 25-jarig bestaan en in september 2017 werd de 300.000ste passagier vervoerd.
             Een teken dat de bus in een behoefte blijft voorzien.
             </p>
           </div>
@@ -44,18 +44,18 @@ class Reserveringen extends Component {
             <h2>Sponsors</h2>
               <p>In 2016 zijn er nieuwe sponsors bijgekomen en de 60+ bus wordt nu mede mogelijk gemaakt door:</p>
               <ul>
-                <li>de gemeente Schagen</li>
-                <li>het Makado winkelcentrum</li>
-                <li>CineMagnus B.V.</li>
-                <li>Omring Schagen B.V.</li>
-                <li>Stichting Woonzorggroep Samen</li>
-                <li>Wonen Plus Welzijn</li>
-                <li>De Koffiekamer</li>
-                <li>Van der Veen Noten</li>
-                <li>De Nieuwe Nes</li>
-                <li>Podoplaza</li>
-                <li>Univers reclame</li>
-                <li>de gezamenlijke ouderenbonden</li>
+                <li><a href="https://www.schagen.nl/" target="_blank" rel="noopener noreferrer">de gemeente Schagen</a></li>
+                <li><a href="http://www.makadoschagen.nl/pg-907-7-38535/pagina/winkelcentrum_makado_schagen__home.html" target="_blank" rel="noopener noreferrer">het Makado winkelcentrum</a></li>
+                <li><a href="https://www.cinemagnus.nl/" target="_blank" rel="noopener noreferrer">CineMagnus B.V.</a></li>
+                <li><a href="http://www.omring.nl/Omring/Thuiszorg/Thuiszorg-teams/Omring-Thuiszorg-Wij-zijn-de-thuiszorg-in-Schagen" target="_blank" rel="noopener noreferrer">Omring Schagen B.V.</a></li>
+                <li><a href="https://www.woonzorggroepsamen.nl/" target="_blank" rel="noopener noreferrer">Stichting Woonzorggroep Samen</a></li>
+                <li><a href="http://www.wonenpluswelzijn.nl/pg-21592-7-65776/pagina/home.html" target="_blank" rel="noopener noreferrer">Wonen Plus Welzijn</a></li>
+                <li><a href="http://www.dekoffiekamer.com/" target="_blank" rel="noopener noreferrer">De Koffiekamer</a></li>
+                <li><a href="http://www.vanderveennoten.nl/pg-21826-7-50578/pagina/noten_zuidvruchten__wijnen.html" target="_blank" rel="noopener noreferrer">Van der Veen Noten</a></li>
+                <li><a href="https://www.nieuwenes.nl/" target="_blank" rel="noopener noreferrer">De Nieuwe Nes</a></li>
+                <li><a href="http://podoplazaschagen.nl/">Podoplaza</a></li>
+                <li><a href="https://www.univers-reklame.nl/" target="blank" rel="noopener noreferrer">Univers reclame</a></li>
+                <li><a href="http://sbo-schagen.nl/" target="_blank" rel="noopener noreferrer">de gezamenlijke ouderenbonden</a></li>
               </ul>
           </div>
         </div>  
@@ -64,4 +64,4 @@ class Reserveringen extends Component {
   }
 }
 
-export default Reserveringen;
+export default Verhaal;

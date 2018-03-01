@@ -27,8 +27,7 @@ class Contact extends Component {
               Coördinator technische zaken : Willem de Zeeuw<br/>
             </p>
             <p>
-              Het bestuur is te bereiken via email : info@60plusbusschagen.nl
-            </p> 
+              Het bestuur is te bereiken via het contactformulier hiernaast.</p> 
           </div>
           
           <div className="formulier"> 
