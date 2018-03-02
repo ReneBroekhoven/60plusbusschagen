@@ -2,6 +2,7 @@
   display: flex;
   display: -webkit-flex;
   background-color:  var(--item);
+  display:relative;
 }
 
 h1{
@@ -46,6 +47,8 @@ h1{
 .content-home .tekst{
   padding: 10px;
   margin-left: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
   min-width: 200px;
   max-width: 400px;
   background-color: var(--item);

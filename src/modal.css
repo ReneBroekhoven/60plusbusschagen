@@ -1,0 +1,24 @@
+button{
+    padding: 5px;
+    margin: 10px;
+    color: darkgreen;
+    background-color: lightgreen;
+    border-radius: 15px;
+    width: 100px;
+    transition: all 0.3s ease-out;
+}
+
+button:hover{
+    background-color: darkgreen;
+    color: white;
+
+}
+
+h2{
+    display: inline;
+    margin-right: 100px;
+}
+
+button .btn-film{
+
+}

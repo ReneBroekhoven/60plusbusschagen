@@ -8,7 +8,18 @@ class Vrijwilligers extends Component {
       <div>
         <h1>Vrijwilliger worden ?</h1>
         <div className="content-vrijwilligers">
-          <div className="ILB"></div>
+          <div className="ILB">
+          {/*}
+          <Iframe url="./60plusbus.mp4"
+                  width="500px"
+                  height="500px"
+                  id="myId"
+                  className="myClassname"
+                  display="initial"
+                  position="relative"
+                  allowFullScreen/>
+            <ReactPlayer url='./60plusbus.mp4' playing controls='true' />*/}
+          </div>
           <div className="tekst-vrijwilligers">
             <p>
             De 60+ bus is een vrijwilligersorganisatie die sinds 1988 vervoer
@@ -24,7 +35,8 @@ class Vrijwilligers extends Component {
             </strong>
             </p>
           </div>
-          <div className="ILB"></div>
+          <div className="ILB">
+          </div>
         </div>
       </div>
     );

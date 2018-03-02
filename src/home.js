@@ -30,7 +30,7 @@ class Home extends Component {
               De bus wordt gereden door vrijwilligers en u kunt eenvoudig
               telefonisch een rit reserveren.<br /><br />
               Een rit kost slechts € 1,00 per enkele reis.<br /><br />
-              De bus rijdt 7 dagen per week van 9.00 tot 22.00, op zaterdag en zondag van 9.00 tot 18.00 uur.
+              De bus rijdt op werkdagen van 9.00 tot 22.00, op zaterdag en zondag van 9.00 tot 18.00 uur.
             </p>
           </div>
           <figure className="figure_2">

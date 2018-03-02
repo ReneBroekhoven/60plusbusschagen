@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./verhaal.css";
+import MyModal from './modal.js'
 
 
 class Verhaal extends Component {
@@ -10,6 +11,7 @@ class Verhaal extends Component {
         <div className="content-verhaal">
           <div className="geschiedenis">
             <h2>Geschiedenis</h2>
+            <MyModal />
             <p>
             In mei 1988 besloot de NZH, de voorloper van Connexxion, buslijn 159 op te heffen. 
             Lijn 159 reed een lus door Schagen en met name plaatselijke senioren maakten er regelmatig gebruik van. Diverse Schagense ouderen waren, als gevolg van deze opheffing, opeens verstoken van openbaar vervoer. De 60+ bus werd daarom in oktober 1988 opgericht
