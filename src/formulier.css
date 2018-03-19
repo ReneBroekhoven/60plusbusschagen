@@ -1,7 +1,7 @@
 .form{
     width:340px;
     height:540px;
-    background: #e6e6e6;
+    background:var(--item);/*#e6e6e6;*/
     border-radius:8px;
     box-shadow:0 0 40px -10px #000;
     /*margin:calc(50vh - 220px) auto;*/
@@ -29,6 +29,9 @@
     font-family:'Montserrat',sans-serif;
     transition:all .3s;
     border-bottom:2px solid #bebed2
+  }
+  .form textarea{
+    background-color: rgb(235, 235, 235);
   }
   .form input:focus{
     border-bottom:2px solid #78788c;

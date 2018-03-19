@@ -49,7 +49,7 @@ class Home extends Component {
           </figure>
         </div>
         <div className = "nieuws">
-        Afwijkende rijtijden tijdens de paasdagen; zie <NavLink className="stijl" to="/reserveringen">Reserveringen</NavLink>
+        Afwijkende rijtijden tijdens de paasdagen !<br />zie <NavLink className="stijl" to="/reserveringen">Reserveringen</NavLink>
         </div>
       </div>
     );

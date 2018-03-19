@@ -11,7 +11,7 @@ class Reserveringen extends Component {
             <h2>Afwijkende rijtijden Paasdagen</h2>
             <p>Op beide paasdagen, 1 en 2 april, rijdt de bus van 9.00 to 17.00 uur. De telefoondienst is op 2e paasdag niet aanwezig.</p>
             <p>Ritten voor beide paasdagen kunnen worden aangevraagd op vrijdag 30 maart.</p>
-            <p>Ritten voor <strong>dinsdag 3 april</strong> kunnen op vrijdag 30 maart worden gedaan.</p>
+            <p>Ritten voor <strong>dinsdag 3 april</strong> kunnen op vrijdag 30 maart worden gereserveerd.</p>
             <p>Goede Vrijdag is voor de 60+ bus een normale (werk)dag !</p>
           </div>
           <div className="reserveringen-tekst">

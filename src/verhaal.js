@@ -44,7 +44,7 @@ class Verhaal extends Component {
           </div>
           <div className="sponsors">
             <h2>Sponsors</h2>
-              <p>In 2016 zijn er nieuwe sponsors bijgekomen en de 60+ bus wordt nu mede mogelijk gemaakt door:</p>
+              <p>Wij zijn zeer erkentelijk voor onze sponsors. De 60+ bus wordt mede mogelijk gemaakt door:</p>
               <ul>
                 <li><a href="https://www.schagen.nl/" target="_blank" rel="noopener noreferrer">de gemeente Schagen</a></li>
                 <li><a href="http://www.makadoschagen.nl/pg-907-7-38535/pagina/winkelcentrum_makado_schagen__home.html" target="_blank" rel="noopener noreferrer">het Makado winkelcentrum</a></li>

@@ -43,7 +43,7 @@ class Formulier extends Component {
         alert("Uw formulier is verzonden !");
         //document.getElementById("formulier").reset(); // uncontrolled manier
 
-        console.log("de naam is : "+ form.elements.name.value);
+        console.log("de naam is : "+ form.elements.name.value); //!~zie gebruik van elements !!
         emptyForm();
       })
       .catch(function(error) {
