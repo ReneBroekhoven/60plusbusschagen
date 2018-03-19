@@ -9,6 +9,7 @@ h2 {
 
 .content-reserveringen {
   display: grid;
+  grid-gap: 20px;
   grid-template-columns: 1fr minmax(300px, 700px) 1fr;
   justify-items: center;
 }
@@ -18,4 +19,18 @@ h2 {
   border-radius: 5px;
   padding: 15px;
   box-shadow:0 0 40px -10px #000;
+}
+
+.berichten-tekst {
+  display: block; /*none;*/
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: var(--item);
+  border-radius: 5px;
+  padding: 15px;
+  box-shadow:0 0 40px -10px #000;
+  border: 2px solid red;
+}
+.berichten-tekst h2{
+  color: red;
 }

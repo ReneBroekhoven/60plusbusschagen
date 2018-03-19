@@ -7,7 +7,13 @@ class Reserveringen extends Component {
       <div>
         <h1>Reserveringen ( 0224-272888 )</h1>
         <div className="content-reserveringen">
-          <div className="ILB" />
+          <div className="berichten-tekst" >
+            <h2>Afwijkende rijtijden Paasdagen</h2>
+            <p>Op beide paasdagen, 1 en 2 april, rijdt de bus van 9.00 to 17.00 uur. De telefoondienst is op 2e paasdag niet aanwezig.</p>
+            <p>Ritten voor beide paasdagen kunnen worden aangevraagd op vrijdag 30 maart.</p>
+            <p>Ritten voor <strong>dinsdag 3 april</strong> kunnen op vrijdag 30 maart worden gedaan.</p>
+            <p>Goede Vrijdag is voor de 60+ bus een normale (werk)dag !</p>
+          </div>
           <div className="reserveringen-tekst">
             <p>
               Elke werkdag van 14.00 tot 15.30 uur kunnen ritten worden aanvraagd
@@ -29,7 +35,7 @@ class Reserveringen extends Component {
               rit afzonderlijk te reserveren. U belt alleen af bij verhindering.
             </p>
           </div>
-          <div className="ILB" />
+          <div className="ILB" />     
         </div>
       </div>
     );

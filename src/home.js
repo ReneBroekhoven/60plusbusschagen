@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./home.css";
+import {NavLink} from "react-router-dom";
 import bus from "./foto_bus.jpg";
 import driehonderdduizendste from "./300.000ste.jpg";
 
@@ -46,6 +47,9 @@ class Home extends Component {
               14 september 2017 : de 300.000ste passagier !
             </figcaption>
           </figure>
+        </div>
+        <div className = "nieuws">
+        Afwijkende rijtijden tijdens de paasdagen; zie <NavLink className="stijl" to="/reserveringen">Reserveringen</NavLink>
         </div>
       </div>
     );
