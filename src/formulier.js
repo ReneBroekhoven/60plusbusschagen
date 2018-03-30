@@ -19,6 +19,17 @@ class Formulier extends Component {
       [event.target.name]: event.target.value
     });
   }
+  
+// icm met ref={(input) => {this.name = input}} en  
+// onKeyUp={this.onKeyUp.bind(this, 'firstName')}zou de return ervoor
+// moeten zorgen dat je naar het volgenbde veld gaat; keycode levert 
+// echter een undefined op; waarschijnlijk door de onChange gaat dit
+// niet samen
+//  onKeyUp = (passed, event)=>{ // passed geeft de naam van de ref door
+//    if(event.keyCode === 13){
+//      this.email.focus();
+//    }
+//  }
 
   emptyForm() {
     this.setState({
@@ -56,7 +67,6 @@ class Formulier extends Component {
     return (
       <form noValidate id="formulier" onSubmit={this.handleSubmit} className="form">
         <h2>CONTACT</h2>
-
         <p type="Naam:">
           <input
             type="text"

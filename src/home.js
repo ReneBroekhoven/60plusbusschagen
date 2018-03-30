@@ -3,6 +3,22 @@ import "./home.css";
 import {NavLink} from "react-router-dom";
 import bus from "./foto_bus.jpg";
 import driehonderdduizendste from "./300.000ste.jpg";
+import moment from 'moment';
+import { weergeven_nieuws } from './helpers'
+
+function Nieuws(){
+  //console.log("test : " + weergeven_nieuws);
+  if( weergeven_nieuws() > 0 ){
+    return (
+      <div className = "nieuws">
+         Afwijkende rijtijden tijdens de feestdagen !<br />zie <NavLink className="stijl" to="/reserveringen">Reserveringen</NavLink>
+      </div>
+    ) 
+  }else{
+    return null;
+  }
+}
+
 
 class Home extends Component {
   render() {
@@ -48,9 +64,7 @@ class Home extends Component {
             </figcaption>
           </figure>
         </div>
-        <div className = "nieuws">
-        Afwijkende rijtijden tijdens de paasdagen !<br />zie <NavLink className="stijl" to="/reserveringen">Reserveringen</NavLink>
-        </div>
+        <Nieuws />        
       </div>
     );
   }

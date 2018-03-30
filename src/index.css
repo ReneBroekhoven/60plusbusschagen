@@ -115,6 +115,19 @@ ul li .active {
 }
 
 /* bij < 900px de navbar kleiner maken of met de drie streepjes*/
+
+
+ul.header {
+  background-color: var(--kop-staart);
+  padding: 4px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 0;
+  grid-area: header;
+  margin-bottom: 10px;
+}
+ 
 ul.header li {
   list-style-type: none;
   margin: 0;
@@ -132,17 +145,6 @@ ul.header li {
 
 ul.header li:hover {
   background-color: var(--hover-item);
-}
-
-ul.header {
-  background-color: var(--kop-staart);
-  padding: 4px;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 0;
-  grid-area: header;
-  margin-bottom: 10px;
 }
 
 ul.header li a {

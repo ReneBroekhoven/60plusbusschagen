@@ -21,8 +21,8 @@ h2 {
   box-shadow:0 0 40px -10px #000;
 }
 
-.berichten-tekst {
-  display: block; /*none;*/
+.berichten {
+  display: none;
   margin-top: 20px;
   margin-bottom: 20px;
   background-color: var(--item);
@@ -31,6 +31,10 @@ h2 {
   box-shadow:0 0 40px -10px #000;
   border: 2px solid red;
 }
-.berichten-tekst h2{
+.berichten h2{
   color: red;
+}
+
+.berichten.actief{
+  display: block;
 }
