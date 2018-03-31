@@ -56,6 +56,7 @@ class Verhaal extends Component {
                 <li><a href="http://www.vanderveennoten.nl/pg-21826-7-50578/pagina/noten_zuidvruchten__wijnen.html" target="_blank" rel="noopener noreferrer">Van der Veen Noten</a></li>
                 <li><a href="https://www.nieuwenes.nl/" target="_blank" rel="noopener noreferrer">De Nieuwe Nes</a></li>
                 <li><a href="http://podoplazaschagen.nl/">Podoplaza</a></li>
+                <li><a href="http://vanderlindentandtechniek.nl/">Van der Linden Tandtechniek</a></li>
                 <li><a href="https://www.univers-reklame.nl/" target="blank" rel="noopener noreferrer">Univers reclame</a></li>
                 <li><a href="http://sbo-schagen.nl/" target="_blank" rel="noopener noreferrer">de gezamenlijke ouderenbonden</a></li>
               </ul>
