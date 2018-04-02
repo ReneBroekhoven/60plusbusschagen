@@ -88,8 +88,23 @@ let vragenEnAntwoorden = [
 ];
 
 class Vragen extends Component {
-  
+  constructor(props) {
+    super(props);
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  // beter maken met true/false en toggleClass oid
+  handleClick(event) {
+    let antwoord = event.currentTarget.nextSibling.className;
+    if (antwoord === "antwoord dicht") {
+      event.currentTarget.nextSibling.className = "antwoord open";
+    } else {
+      event.currentTarget.nextSibling.className = "antwoord dicht";
+    }
+  }
+
   render() {
+    let class_antwoord = "antwoord dicht";
     return (
       <div>
         <h1>Vragen ?</h1>
@@ -102,14 +117,14 @@ class Vragen extends Component {
             </h3>
             <ul>
             {vragenEnAntwoorden.map((item, index) => (
-              <details key={vragenEnAntwoorden[index].nummer}>
-                <summary >
+              <li key={vragenEnAntwoorden[index].nummer}>
+                <span onClick={this.handleClick} className="vraag">
                   {vragenEnAntwoorden[index].vraag}
-                </summary>
-                <span>
+                </span>
+                <span className={class_antwoord}>
                   {vragenEnAntwoorden[index].antwoord}
                 </span>
-              </details>
+              </li>
             ))}
             </ul>
           </div>

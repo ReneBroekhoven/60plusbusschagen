@@ -32,6 +32,7 @@
   }
   .form textarea{
     background-color: rgb(235, 235, 235);
+    width: 90%;
   }
   .form input:focus{
     border-bottom:2px solid #78788c;

@@ -68,3 +68,13 @@ ul li .vraag:hover::after {
   padding: 10px 10px 10px 30px;
   transition: all 0.3s ease-out; /* werkt niet ? */
 }
+
+summary{
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+
+details{
+  font-weight: bold;
+  padding: 5px;
+}
