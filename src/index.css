@@ -1,12 +1,12 @@
 :root {
   --kop-staart: #a9eca2;
   --kop-staart-items: rgb(31, 112, 22);
-  --body: #f5ffcb;
-  --content: #ffe3b0;
+  --body: rgba(255, 255, 255, 0.459);/*#f5ffcb;*/
+  --content: rgba(255, 255, 255, 0.918);/*#ffe3b0;*/
   --rest: #f5c8bd;
   --hover-item: rgb(69, 182, 69);
   --active-item: rgb(116, 231, 116);
-  --item: #ebcf9c;
+  --item: rgb(248, 245, 220);/*#ebcf9c;*/
 }
 
 html {
