@@ -44,9 +44,10 @@ let vragenEnAntwoorden = [
     nummer: 8,
     vraag: `Heeft de 60+ bus afwijkende rijtijden ? `,
     antwoord: `Ja.
-                Kerstdagen     van 10.00 tot 17.00 uur
-                Nieuwjaarsdag  van 13.00 tot 17.00 uur
-                Overige feestdagen  van 09.00 tot 17.00 uur`
+                Kerstdagen     van 10.00 tot 17.00 uur.
+                Nieuwjaarsdag  van 13.00 tot 17.00 uur.
+                Overige feestdagen  van 09.00 tot 17.00 uur.
+                Dodenherdenking tot 18.00 uur.`
   },
   {
     nummer: 9,

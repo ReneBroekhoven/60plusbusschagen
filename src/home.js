@@ -1,24 +1,39 @@
 import React, { Component } from "react";
-import "./home.css";
 import {NavLink} from "react-router-dom";
+
+// CSS file
+import "./home.css";
+
+//plaatjes
 import bus from "./foto_bus.jpg";
 import driehonderdduizendste from "./300.000ste.jpg";
+
+// helper functies
 import moment from 'moment';
 import { weergeven_nieuws } from './helpers'
+import { SIGBREAK } from "constants";
 
+// geeft bericht weer dat er nieuw is
 function Nieuws(){
-  //console.log("test : " + weergeven_nieuws);
-  if( weergeven_nieuws() > 0 ){
+  let displayTekst = weergeven_nieuws();
+  let dagenaanduiding;
+  if( displayTekst ){
+    switch(displayTekst){
+    case 2: dagenaanduiding = 'Koningsdag'; break;
+    case 3: dagenaanduiding = 'Dodenherdenking'; break;
+    case 4: dagenaanduiding = 'Hemelvaart'; break;
+    case 5: dagenaanduiding = 'Pinksteren'; break;
+    default : "de feestdagen"
+    }
     return (
       <div className = "nieuws">
-         Afwijkende rijtijden tijdens de feestdagen !<br />zie <NavLink className="stijl" to="/reserveringen">Reserveringen</NavLink>
+         Afwijkende rijtijden tijdens {dagenaanduiding} !<br />zie <NavLink className="stijl" to="/reserveringen">Reserveringen</NavLink>
       </div>
     ) 
   }else{
     return null;
   }
 }
-
 
 class Home extends Component {
   render() {

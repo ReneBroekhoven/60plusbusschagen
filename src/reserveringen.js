@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import "./reserveringen.css";
 import moment from "moment";
-import{feestdagen } from './helpers.js';
+import { feestdagen } from './helpers.js';
 import { weergeven_nieuws } from './helpers'
 
-let {pasen, kerstmis, pinksteren, nieuwjaar, hemelvaart, koningsdag} = feestdagen;
+let {pasen, kerstmis, pinksteren, nieuwjaar, hemelvaart, koningsdag, bevrijdingsdag} = feestdagen;
 
 // // geeft in string "maand.dag" 1e paasdag aan. 2018: 04.01
 // function bereken_pasen(Y) {
@@ -55,6 +55,11 @@ let dagNaPasenT = pasen.clone().add(2, 'days').format("dddd D MMMM");
 let koningsdagT = koningsdag.clone().format('dddd D MMMM');
 let dagNaKoningsdagT = koningsdag.clone().add(3, 'days').format('dddd D MMMM');
 let koningsdagReserveringT = koningsdag.clone().subtract(1, 'days').format('dddd D MMMM');
+
+// bevrijdingsdag
+let dodenherdenkingT = bevrijdingsdag.clone().format('dddd D MMMM');
+let bevrijdingsdagT = bevrijdingsdag.clone().add(1, 'days').format('dddd D MMMM');
+//let bevrijdingsdagReserveringT = bevrijdingsdag.clone().subtract(1, 'days').format('dddd D MMMM');
 
 // hemelvaart
 let hemelvaartT = hemelvaart.clone().format('dddd D MMMM');
@@ -126,6 +131,7 @@ class Reserveringen extends Component {
       actief3: '',
       actief4: '',
       actief5: '',
+      actief6: ''
     };
 
     this.activateBericht = this.activateBericht.bind(this);
@@ -154,6 +160,10 @@ class Reserveringen extends Component {
       this.setState({
         actief5: "actief",
       });
+    }else if(weergeven_nieuws() === 6){
+      this.setState({
+        actief6: "actief",
+      });
     }  
   }
 
@@ -181,18 +191,24 @@ class Reserveringen extends Component {
             <p>Op Koningsdag {koningsdagT}, rijdt de bus van 9.00 tot 17.00 uur. De telefoondienst is op Koningsdag niet aanwezig.</p>
             <p>Ritten voor Koningsdag <strong>en {dagNaKoningsdagT}</strong> kunnen worden aangevraagd op {koningsdagReserveringT}.</p>
           </div>
-          <div className={`berichten tekst-hemelvaart ${this.state.actief3}`} >
+          <div className={`berichten tekst-bevrijdingsdag ${this.state.actief3}`} >
+            <h2>Afwijkende rijtijden op Dodenherdenking</h2>
+            <p>Op {dodenherdenkingT}, rijdt de bus van 9.00 tot 18.00 uur.</p>
+            <p>Op {bevrijdingsdagT}, rijdt de bus op de normale tijden</p>
+            {/*<p>Ritten voor Koningsdag <strong>en {dagNaKoningsdagT}</strong> kunnen worden aangevraagd op {koningsdagReserveringT}.</p>*/}
+          </div>
+          <div className={`berichten tekst-hemelvaart ${this.state.actief4}`} >
             <h2>Afwijkende rijtijden Hemelvaart</h2>
             <p>Op Hemelvaart {hemelvaartT} rijdt de bus van 9.00 tot 17.00 uur. De telefoondienst is dan niet aanwezig.</p>
             <p>Ritten voor <strong>{dagNaHemelvaartT}</strong> kunnen worden aangevraagd op {hemelvaartReserveringT}.</p>
           </div>
-          <div className={`berichten tekst-pinksteren" ${this.state.actief4}`} >
+          <div className={`berichten tekst-pinksteren" ${this.state.actief5}`} >
             <h2>Afwijkende rijtijden Pinksteren</h2>
             <p>Op beide pinksterdagen, {pinksterDag1T} en {pinksterDag2T}, rijdt de bus van 9.00 tot 17.00 uur. De telefoondienst is op 2e pinksterdag niet aanwezig.</p>
             <p>Ritten voor beide pinksterdagen kunnen worden aangevraagd op {pinksterenReserveringT}.</p>
             <p>Ritten voor <strong>{dagNaPinksterenT}</strong> kunnen ook op {pinksterenReserveringT} worden gereserveerd.</p>
           </div>
-          <div className={`berichten tekst-kerstdagen" ${this.state.actief5}`} >
+          <div className={`berichten tekst-kerstdagen" ${this.state.actief6}`} >
             <h2>Afwijkende rijtijden Kerstdagen en Nieuwjaar</h2>
             <p>Op beide kerstdagen rijdt de bus van 10.00 tot 17.00 uur. 
              De telefoondienst is op beide kerstdagen niet aanwezig.

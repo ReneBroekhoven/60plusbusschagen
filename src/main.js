@@ -80,7 +80,8 @@ class Main extends Component {
   }
   
 } */
-
+// NavLink ipv Link zorgt ervoor dat er nu een class="active" wordt toegevoegd als je op die link hebt geklikt. 
+// Te gebruiken om dit op een bepaalde manier te stylen.
   render() {
     return (
       <Router>
@@ -112,13 +113,6 @@ class Main extends Component {
             </li>
           </ul>
           <div className="content">
-            {/*}
-            <div className="theme">
-              <button value="kleur1">kleur 1</button>
-              <button value="kleur2">kleur 2</button>
-              <button value="kleur3">kleur 3</button>
-            </div>
-          */}
             <Switch>
               <Route exact path="/" component={Home} />
               <Route path="/reserveringen" component={Reserveringen} />
@@ -127,7 +121,6 @@ class Main extends Component {
               <Route path="/verhaal" component={Verhaal} />
               <Route path="/contact" component={Contact} />
               <Route render={() => <Redirect to="/" />} />
-              {/*<Route component={NotFound} />*/}
             </Switch>
           </div>
           <footer className="footer">

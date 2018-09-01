@@ -19,12 +19,14 @@ let {
   pinksteren,
   nieuwjaar,
   hemelvaart,
-  koningsdag
+  koningsdag,
+  bevrijdingsdag
 } = bereken_feestdagen();
 
 export const feestdagen = {
   pasen,
   koningsdag,
+  bevrijdingsdag,
   hemelvaart,
   pinksteren,
   kerstmis,
@@ -35,12 +37,14 @@ export const feestdagen = {
 // betreffende de rittenschema's tijdens feestdagen
 export function weergeven_nieuws() {
   let periode = 0;
-  let nu = moment(); // huisige tijdstip
-  //nu = moment("2019-01-02"); // test datum
+  let nu = moment(); // huidig tijdstip
+  //nu = moment("2018-05-20"); // test datum
   let pasen_ervoor = pasen.clone().subtract(7, "days");
   let pasen_erna = pasen.clone().add(2, "days");
   let koningsdag_ervoor = koningsdag.clone().subtract(7, "days");
   let koningsdag_erna = koningsdag.clone().add(1, "days");
+  let bevrijdingsdag_erna = bevrijdingsdag.clone().add(2, "days");
+  let bevrijdingsdag_ervoor = bevrijdingsdag.clone().subtract(5, "days"); // korte mededeling
   let hemelvaart_ervoor = hemelvaart.clone().subtract(7, "days");
   let hemelvaart_erna = hemelvaart.clone().add(1, "days");
   let pinksteren_ervoor = pinksteren.clone().subtract(7, "days");
@@ -51,12 +55,14 @@ export function weergeven_nieuws() {
     periode = 1;
   } else if (nu > koningsdag_ervoor && nu <= koningsdag_erna) {
     periode = 2;
+  } else if (nu > bevrijdingsdag_ervoor && nu <= bevrijdingsdag_erna) {
+    periode = 3; 
   } else if (nu > hemelvaart_ervoor && nu <= hemelvaart_erna) {
-    periode = 3;
-  } else if (nu > pinksteren_ervoor && nu <= pinksteren_erna) {
     periode = 4;
-  } else if (nu > kerstmis_ervoor && nu <= kerstmis_erna) {
+  } else if (nu > pinksteren_ervoor && nu <= pinksteren_erna) {
     periode = 5;
+  } else if (nu > kerstmis_ervoor && nu <= kerstmis_erna) {
+    periode = 6;
   }
   return periode;
 }
@@ -74,6 +80,7 @@ function bereken_feestdagen() {
   //berekent de feestdagen van het lopend jaar
   let pasen = moment(pasen_string);
   let koningsdag = moment(`${huidigJaar}-04-27`);
+  let bevrijdingsdag = moment(`${huidigJaar}-05-04`)
   let pinksteren = pasen.clone().add(49, "days");
   let hemelvaart = pinksteren.clone().subtract(10, "days");
   let kerstmis = moment(`${huidigJaar}-12-25`);
@@ -82,6 +89,7 @@ function bereken_feestdagen() {
   return {
     pasen,
     koningsdag,
+    bevrijdingsdag,
     pinksteren,
     hemelvaart,
     kerstmis,

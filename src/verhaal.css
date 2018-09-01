@@ -38,11 +38,11 @@ font-size: 0.9em;
 }
 
 .sponsors li{
-  color: green;;
+  color:black;
 }
 
 .sponsors a{
   text-decoration: none;
-  color: green;
+  color: #F07D00;
 }
 

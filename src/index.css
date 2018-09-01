@@ -1,12 +1,12 @@
 :root {
   --kop-staart: #a9eca2;
   --kop-staart-items: rgb(31, 112, 22);
-  --body: rgba(255, 255, 255, 0.459);/*#f5ffcb;*/
-  --content: rgba(255, 255, 255, 0.918);/*#ffe3b0;*/
+  --body:  rgba(255, 255, 255, 0.459);
+  --content: rgba(255, 255, 255, 0.918);
   --rest: #f5c8bd;
   --hover-item: rgb(69, 182, 69);
   --active-item: rgb(116, 231, 116);
-  --item: rgb(248, 245, 220);/*#ebcf9c;*/
+  --item:rgb(248, 245, 220); 
 }
 
 html {
@@ -23,10 +23,8 @@ html {
 
 body {
   background-color: var(--body);
-  /*padding: 20px 20px;*/
   margin: 0;
   padding: 0;
-  /*height: 100vh; heeft waarschijnlijk geen zin*/
   height: 100%;
 }
 
@@ -60,7 +58,7 @@ li {
 }
 .hoofdtitel .logo {
   transform: rotate(-90deg);
-  width: 75px;
+  width: 125px;
   height: auto;
   position: absolute;
   top: 90px;
@@ -84,7 +82,7 @@ li {
 }
 
 .active {
-  background-color: var(--active-item);
+  background-color: black;
 }
 
 ul li .active {
@@ -98,7 +96,6 @@ ul li .active {
   font-weight: bold;
   margin: 0;
   padding: 0;
-  background-image: url("60+bus1.png");
   background-position: center;
   height: 100%;
   grid-area: hoofdtitel;
@@ -118,7 +115,7 @@ ul li .active {
 
 
 ul.header {
-  background-color: var(--kop-staart);
+  background-color: white; 
   padding: 4px;
   display: flex;
   justify-content: center;
@@ -131,7 +128,7 @@ ul.header {
 ul.header li {
   list-style-type: none;
   margin: 0;
-  background-color: var(--kop-staart-items);
+  background-color: #F07D00;
   padding: 4px;
   margin: 10px 10px;
   border-radius: 5px;
@@ -140,11 +137,10 @@ ul.header li {
   display: grid;
   align-items: center;
   justify-content: center;
-  /*flex: 1;*/
 }
 
 ul.header li:hover {
-  background-color: var(--hover-item);
+  background-color: rgb(161, 83, 0);
 }
 
 ul.header li a {
@@ -154,16 +150,9 @@ ul.header li a {
   padding: 5px;
   margin: 0;
   border-radius: 5px;
-  /*display: block;*/
   transition: color 0.3s ease-out;
 }
 
-/*
-ul.header li a:hover {
-  color: rgb(224, 198, 198);
-}
-*/
-/* padding bottom 0 omdat de footyer andere in de content komt te staan ? */
 .content {
   background-color: var(--content);
   height: 100%;
@@ -183,14 +172,16 @@ ul.header li a:hover {
 }
 
 footer {
-  background: var(--kop-staart);
+
+  background: var(--item);
+/*background: linear-gradient(to right, var(--item), rgb(233, 221, 157));*/
   padding: 10px;
-  margin-bottom: 0;
   grid-area: footer;
-  /*max-height: 40px;*/
-  align-self: end;
   display: flex;
   flex-wrap: wrap;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 footer p {

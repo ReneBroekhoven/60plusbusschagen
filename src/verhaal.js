@@ -48,7 +48,7 @@ class Verhaal extends Component {
               <ul>
                 <li><a href="https://www.schagen.nl/" target="_blank" rel="noopener noreferrer">de gemeente Schagen</a></li>
                 <li><a href="http://www.makadoschagen.nl/pg-907-7-38535/pagina/winkelcentrum_makado_schagen__home.html" target="_blank" rel="noopener noreferrer">het Makado winkelcentrum</a></li>
-                <li><a href="https://www.cinemagnus.nl/" target="_blank" rel="noopener noreferrer">CineMagnus B.V.</a></li>
+                <li><a href="https://kinepolis.nl/bioscopen/kinepolis-cinemagnus-schagen/info" target="_blank" rel="noopener noreferrer">Kinepolis Schagen</a></li>
                 <li><a href="http://www.omring.nl/Omring/Thuiszorg/Thuiszorg-teams/Omring-Thuiszorg-Wij-zijn-de-thuiszorg-in-Schagen" target="_blank" rel="noopener noreferrer">Omring Schagen B.V.</a></li>
                 <li><a href="https://www.woonzorggroepsamen.nl/" target="_blank" rel="noopener noreferrer">Stichting Woonzorggroep Samen</a></li>
                 <li><a href="http://www.wonenpluswelzijn.nl/pg-21592-7-65776/pagina/home.html" target="_blank" rel="noopener noreferrer">Wonen Plus Welzijn</a></li>
